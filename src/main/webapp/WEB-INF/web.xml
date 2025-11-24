@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+
+<!-- Login -->
+ 	<servlet>
+		<servlet-name>login</servlet-name>
+		<servlet-class>login.loginservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>login</servlet-name>
+		<url-pattern>/log</url-pattern>
+	</servlet-mapping>
+	
+	
+<!-- Admin -->	
+	
+	<servlet>
+        <servlet-name>adminprofileservlet</servlet-name>
+        <servlet-class>servlet.adminprofileservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>adminprofileservlet</servlet-name>
+        <url-pattern>/adminProfile</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>adminupdateservlet</servlet-name>
+        <servlet-class>admin.adminupdateservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>adminupdateservlet</servlet-name>
+        <url-pattern>/adminupdate</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>admindeleteservlet</servlet-name>
+        <servlet-class>admin.admindeleteservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>admindeleteservlet</servlet-name>
+        <url-pattern>/admindelete</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Feedbackdeleteservlet</servlet-name>
+        <servlet-class>admin.Feedbackdeleteservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Feedbackdeleteservlet</servlet-name>
+        <url-pattern>/admindeletefeedback</url-pattern>
+    </servlet-mapping>
+
+<!-- User -->
+	<servlet>
+        <servlet-name>Userinsert</servlet-name>
+        <servlet-class>user.Userservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Userinsert</servlet-name>
+        <url-pattern>/insert</url-pattern>
+    </servlet-mapping>
+
+	<servlet>
+        <servlet-name>Userprofileservlet</servlet-name>
+        <servlet-class>user.Userprofileservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Userprofileservlet</servlet-name>
+        <url-pattern>/Userprofile</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Userupdateservlet</servlet-name>
+        <servlet-class>user.Userupdateservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Userupdateservlet</servlet-name>
+        <url-pattern>/updateuser</url-pattern>
+    </servlet-mapping>
+ 
+<servlet>
+        <servlet-name>Userdeleteservlet</servlet-name>
+        <servlet-class>user.Userdeleteservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Userdeleteservlet</servlet-name>
+        <url-pattern>/userdelete</url-pattern>
+    </servlet-mapping>
+ 
+ <!-- Booking-->
+	<servlet>
+        <servlet-name>bookinginsert</servlet-name>
+        <servlet-class>booking.Bookinginsertservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>bookinginsert</servlet-name>
+        <url-pattern>/insertbooking</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>bookingsearch</servlet-name>
+        <servlet-class>booking.Bookingsearchservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>bookingsearch</servlet-name>
+        <url-pattern>/bookingsearch</url-pattern>
+    </servlet-mapping>
+    
+    
+	<servlet>
+        <servlet-name>Bookingupdateservlet</servlet-name>
+        <servlet-class>booking.Bookingupdateservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Bookingupdateservlet</servlet-name>
+        <url-pattern>/bookingupdate</url-pattern>
+    </servlet-mapping>
+    
+    
+	<servlet>
+        <servlet-name>Bookingdeleteservlet</servlet-name>
+        <servlet-class>booking.Bookingdeleteservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Bookingdeleteservlet</servlet-name>
+        <url-pattern>/bookingdelete</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    <servlet-name>Bookingallservlet</servlet-name>
+    <servlet-class>admin.Bookingallservlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>Bookingallservlet</servlet-name>
+    <url-pattern>/bookingallservlet</url-pattern>
+</servlet-mapping>
+    
+    
+<!-- Feedback-->
+	<servlet>
+        <servlet-name>Insertfeedbackservlet</servlet-name>
+        <servlet-class>feedback.Insertfeedbackservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Insertfeedbackservlet</servlet-name>
+        <url-pattern>/feedbackinsert</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Searchfeedbackservlet</servlet-name>
+        <servlet-class>feedback.Searchfeedbackservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Searchfeedbackservlet</servlet-name>
+        <url-pattern>/searchfeedback</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>Updatefeedbackservlet</servlet-name>
+        <servlet-class>feedback.Updatefeedbackservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Updatefeedbackservlet</servlet-name>
+        <url-pattern>/updatefeedback</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Deletefeedbackservlet</servlet-name>
+        <servlet-class>feedback.Deletefeedbackservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Deletefeedbackservlet</servlet-name>
+        <url-pattern>/feedbackdelete</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>Allfeedbackservlet</servlet-name>
+        <servlet-class>feedback.Allfeedbackservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Allfeedbackservlet</servlet-name>
+        <url-pattern>/allfeedback</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Guide-->
+	<servlet>
+        <servlet-name>Guideinsertservlet</servlet-name>
+        <servlet-class>admin.Guideinsertservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Guideinsertservlet</servlet-name>
+        <url-pattern>/guideinsert</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Guideallviewservlet</servlet-name>
+        <servlet-class>admin.Guideallviewservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Guideallviewservlet</servlet-name>
+        <url-pattern>/guideallview</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</web-app>
